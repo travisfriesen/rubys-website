@@ -15,7 +15,7 @@ export default function Navbar() {
                 <div className="col-span-2 inline-grid grid-cols-3">
                     <Button href="/golf" label="Golf"/>
                     <Button href="/hotdogcart" label="Hot Dog Cart"/>
-                    <Button href="/arcade" label="Arcade"/>
+                    <Button href="/arcade" label="Boardwalk Station"/>
                 </div>
         </div>
 
