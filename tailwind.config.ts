@@ -15,7 +15,7 @@ const config: Config = {
       },
     },
     colors: {
-      "r-green" : "#7EAA40",
+      "r-green" : "#4F6827",
       "r-red": "#A51108",
       "r-blue": "#2C407C",
       "r-black": "#151515",
