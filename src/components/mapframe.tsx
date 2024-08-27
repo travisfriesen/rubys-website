@@ -6,10 +6,10 @@ interface IMapFrame {
 
 export const MapFrame = ({href}: IMapFrame) => {
     return (
-        <div className="flex m-auto">
+        <div className="flex m-auto h-[25rem]">
             <iframe
                 src={href}
-                width="600" height="450" loading="lazy"
+                width="100%" height="100%" loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"></iframe>
 
         </div>

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <div>
-          <Header src="/golf.jpg" alt="people playing golf"/>
+          <Header src="/img/golf.jpg" alt="people playing golf"/>
           <div className="bg-r-green pl-6 pr-6 text-center m-auto pt-20 pb-20">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               <h1 className="text-4xl pb-5">Ruby's Paradise is family owned and operated</h1>
