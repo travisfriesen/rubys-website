@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <div>
-          <Header src="/img/outdoorminigolf.png" alt="people playing golf"/>
+          <Header src="/img/outdoorminigolf1.png" alt="people playing golf"/>
           <div className="bg-r-green pl-6 pr-6 text-center m-auto pt-20 pb-20">
             
             <h1 className="text-4xl pb-5">Ruby's Paradise Mini Golf</h1>
