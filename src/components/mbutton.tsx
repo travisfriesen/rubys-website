@@ -6,10 +6,10 @@ interface IButton {
     onClick?: () => void;
 }
 
-export const Button = ({href, label, onClick}: IButton) => {
+export const MButton = ({href, label, onClick}: IButton) => {
     return (
-        <div className="flex m-auto">
-            <Link className="w-full h-full" href={href}>
+        <div className="flex m-auto z-50">
+            <Link href={href}>
                 <div>{label}</div>
             </Link>
 
