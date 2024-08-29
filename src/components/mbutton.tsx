@@ -10,7 +10,7 @@ export const MButton = ({href, label, onClick}: IButton) => {
     return (
         <div className="flex m-auto z-50">
             <Link href={href}>
-                <div>{label}</div>
+                <div className="text-r-text">{label}</div>
             </Link>
 
         </div>

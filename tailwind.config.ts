@@ -21,7 +21,8 @@ const config: Config = {
       "r-black": "#151515",
       "r-yellow": "#FFCE47",
       "r-white": "#E4DFDA",
-      "r-footer-white": "#DDD6D0"
+      "r-footer-white": "#DDD6D0",
+      "r-text": "#fbfcf8"
     }
   },
   plugins: [],

@@ -11,8 +11,8 @@ export default function Home() {
       <div>
           <Header src="/img/golf.jpg" alt="people playing golf"/>
           <div className="bg-r-green pl-6 pr-6 text-center m-auto pt-20 pb-20">
-            <h1 className="text-4xl pb-5">Ruby's Paradise Driving Range</h1>
-            <h2 className="text-2xl pb-2">Featuring Golf, Mini Golf, Club Rentals, and Snacks</h2>
+            <h1 className="text-4xl pb-5 text-r-text">Ruby's Paradise Driving Range</h1>
+            <h2 className="text-2xl pb-2 text-r-text">Featuring Golf, Mini Golf, Club Rentals, and Snacks</h2>
               </div>
               <Spacer/>
               <div className="desktop-only grid grid-cols-2 grid-rows-2">

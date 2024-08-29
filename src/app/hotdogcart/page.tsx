@@ -10,8 +10,8 @@ export default function Home() {
       <div>
           <Header src="/img/hotdogcart.jpg" alt="people playing golf"/>
           <div className="bg-r-green pl-6 pr-6 text-center m-auto pt-20 pb-20">
-            <h1 className="text-4xl pb-5">Hot Dog Cart</h1>
-            <h2 className="text-2xl pb-2">At the farmers market!</h2>
+            <h1 className="text-4xl pb-5 text-r-text">Hot Dog Cart</h1>
+            <h2 className="text-2xl pb-2 text-r-text">At the farmers market!</h2>
               </div>
               <Spacer/>
               <div className="desktop-only grid grid-cols-2 grid-rows-2">
