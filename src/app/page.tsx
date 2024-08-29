@@ -9,7 +9,7 @@ export default function Home() {
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               <h1 className="text-r-text text-4xl pb-5">Ruby's Paradise is family owned and operated</h1>
               <h2 className="text-r-text text-2xl pb-2">Named after Late Aunt Ruby to honour her and thank her for being the biggest supporter through life.</h2>
-              <p>After opening in September of 2022, we slowly moved from being open weekends, to having weekday hours. This year marked the start of multiple new things for us including running Boardwalk Station Arcade and Coffee Shop, and adding Mini Golf to our roster of activities.</p>
+              <p className="text-r-text">After opening in September of 2022, we slowly moved from being open weekends, to having weekday hours. This year marked the start of multiple new things for us including running Boardwalk Station Arcade and Coffee Shop, and adding Mini Golf to our roster of activities.</p>
 
           </div>
           <div className="desktop-only grid grid-cols-2 gap-x-16 gap-y-8 mr-[16vw] ml-[16vw] mb-16 mt-8">
