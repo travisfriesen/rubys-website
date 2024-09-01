@@ -1,4 +1,4 @@
-import { Hours } from "@/components/hours";
+import { ODHours } from "@/components/outdoorhours";
 import { MiniGolfPricing } from "@/components/minigolfpricing";
 import { GolfPricing } from "@/components/golfpricing";
 import { Header } from "@/components/header";
@@ -17,7 +17,7 @@ export default function Home() {
               <Spacer/>
               <div className="desktop-only grid grid-cols-2 grid-rows-2">
                   <div className="m-auto">
-                      <Hours title="Driving Range Hours" sun="11am-5pm" mon="3pm-5:30pm" tues="3pm-5:30pm" weds="Closed" thurs="3pm-5:30pm" fri="1pm-5:30pm" sat="11am-5pm"/>
+                      <ODHours title="Driving Range Hours" sun="11am-5pm" mon="3pm-5:30pm" tues="3pm-5:30pm" weds="Closed" thurs="3pm-5:30pm" fri="1pm-5:30pm" sat="11am-5pm"/>
                   </div>
                   <div className="m-auto">
                     <GolfPricing/>
@@ -33,7 +33,7 @@ export default function Home() {
 
               <div className="mobile-only grid grid-rows-4">
                   <div className="m-auto">
-                      <Hours title="Driving Range Hours" sun="11am-5pm" mon="3pm-5:30pm" tues="3pm-5:30pm" weds="Closed" thurs="3pm-5:30pm" fri="1pm-5:30pm" sat="11am-5pm"/>
+                      <ODHours title="Driving Range Hours" sun="11am-5pm" mon="3pm-5:30pm" tues="3pm-5:30pm" weds="Closed" thurs="3pm-5:30pm" fri="1pm-5:30pm" sat="11am-5pm"/>
                   </div>
                   <div className="m-auto">
                     <GolfPricing/>
