@@ -17,7 +17,7 @@ export default function Footer() {
                 Contact us with any questions
                 <div className="flex flex-col text-r-black">
                     <a href="tel:431-482-1913">(431) 482-1913</a>
-                    <a href="mailto://contact@rubysmb.ca">contact@rubysmb.ca</a>
+                    <a href="mailto:contact@rubysmb.ca">contact@rubysmb.ca</a>
                 </div>
             </div>
 
