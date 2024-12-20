@@ -20,7 +20,7 @@ export default function Home() {
                       <Hours title="Boardwalk Station Hours" sun="12pm-8pm" mon="3pm-8pm" tues="3pm-8pm" weds="Closed" thurs="3pm-8pm" fri="12pm-8pm" sat="12pm-8pm"/>
                   </div>
                   <div className="m-auto">
-                    <MiniGolfPricing title="Outdoor Mini Golf"/>
+                    <MiniGolfPricing title="Indoor Mini Golf"/>
                   </div>
                   <div className="m-auto w-full pl-5">
                     <MapFrame href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d634.4899545263833!2d-96.9667399!3d50.4977056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52eb00698d648c17%3A0x6dec179eb3141e62!2sBoardwalk%20Station%20Arcade!5e0!3m2!1sen!2sca!4v1724526615599!5m2!1sen!2sca"/>
