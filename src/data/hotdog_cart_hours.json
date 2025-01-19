@@ -1,0 +1,14 @@
+{
+	"title": "Hotdog Cart Hours",
+	"_comment" : "ensure that any commas in this file are maintained, otherwise it will break the hours",
+	"seasonallyClosed": true,
+	"sunday" : 	"10am-3pm",
+	"monday" : "Closed",
+	"tuesday" : "Closed",
+	"wednesday" : "Closed",
+	"thursday" : "Closed",
+	"friday" : "Closed",
+	"saturday" : "10am-3pm",
+	"showNotice" : false,
+	"notice": "Placeholder Notice, set showNotice to true to display"
+}

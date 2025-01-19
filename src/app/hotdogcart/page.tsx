@@ -3,6 +3,7 @@ import { HotDogPricing } from "@/components/hotdogpricing";
 import { Header } from "@/components/header";
 import {MapFrame} from "@/components/mapframe";
 import { Spacer } from "@/components/spacer";
+import hoursData from "@/data/hotdog_cart_hours.json";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
               <Spacer/>
               <div className="desktop-only grid grid-cols-2 grid-rows-2">
                   <div className="m-auto">
-                      <Hours title="Hot Dog Cart Hours" sun="10am-3pm" mon="Closed" tues="Closed" weds="Closed" thurs="Closed" fri="Closed" sat="10am-3pm"/>
+                      <Hours title={hoursData.title} seasonally_closed={hoursData.seasonallyClosed} sun={hoursData.sunday} mon={hoursData.monday} tues={hoursData.tuesday} weds={hoursData.wednesday} thurs={hoursData.thursday} fri={hoursData.friday} sat={hoursData.saturday} showNotice={hoursData.showNotice} notice={hoursData.notice}/>
                   </div>
                   <div className="m-auto">
                     <HotDogPricing/>
@@ -29,7 +30,7 @@ export default function Home() {
               </div>
               <div className="mobile-only grid grid-rows-3">
                   <div className="m-auto">
-                      <Hours title="Hot Dog Cart Hours" sun="10am-3pm" mon="Closed" tues="Closed" weds="Closed" thurs="Closed" fri="Closed" sat="10am-3pm"/>
+                      <Hours title={hoursData.title} seasonally_closed={hoursData.seasonallyClosed} sun={hoursData.sunday} mon={hoursData.monday} tues={hoursData.tuesday} weds={hoursData.wednesday} thurs={hoursData.thursday} fri={hoursData.friday} sat={hoursData.saturday} showNotice={hoursData.showNotice} notice={hoursData.notice}/>
                   </div>
                   <div className="m-auto">
                     <HotDogPricing/>

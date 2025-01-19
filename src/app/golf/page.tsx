@@ -1,9 +1,10 @@
-import { ODHours } from "@/components/outdoorhours";
 import { MiniGolfPricing } from "@/components/minigolfpricing";
 import { GolfPricing } from "@/components/golfpricing";
 import { Header } from "@/components/header";
 import {MapFrame} from "@/components/mapframe";
 import { Spacer } from "@/components/spacer";
+import hoursData from "@/data/driving_range_hours.json";
+import {Hours} from "@/components/hours";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
               <Spacer/>
               <div className="desktop-only grid grid-cols-2 grid-rows-2">
                   <div className="m-auto">
-                      <ODHours title="Driving Range Hours" sun="11am-5pm" mon="3pm-5:30pm" tues="3pm-5:30pm" weds="Closed" thurs="3pm-5:30pm" fri="1pm-5:30pm" sat="11am-5pm"/>
+                      <Hours title={hoursData.title} seasonally_closed={hoursData.seasonallyClosed} sun={hoursData.sunday} mon={hoursData.monday} tues={hoursData.tuesday} weds={hoursData.wednesday} thurs={hoursData.thursday} fri={hoursData.friday} sat={hoursData.saturday} showNotice={hoursData.showNotice} notice={hoursData.notice}/>
                   </div>
                   <div className="m-auto">
                     <GolfPricing/>
@@ -33,7 +34,7 @@ export default function Home() {
 
               <div className="mobile-only grid grid-rows-4">
                   <div className="m-auto">
-                      <ODHours title="Driving Range Hours" sun="11am-5pm" mon="3pm-5:30pm" tues="3pm-5:30pm" weds="Closed" thurs="3pm-5:30pm" fri="1pm-5:30pm" sat="11am-5pm"/>
+                      <Hours title={hoursData.title} seasonally_closed={hoursData.seasonallyClosed} sun={hoursData.sunday} mon={hoursData.monday} tues={hoursData.tuesday} weds={hoursData.wednesday} thurs={hoursData.thursday} fri={hoursData.friday} sat={hoursData.saturday} showNotice={hoursData.showNotice} notice={hoursData.notice}/>
                   </div>
                   <div className="m-auto">
                     <GolfPricing/>

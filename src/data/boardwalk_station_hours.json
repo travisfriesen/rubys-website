@@ -1,0 +1,14 @@
+{
+	"title": "Boardwalk Station Hours",
+	"_comment" : "ensure that any commas in this file are maintained, otherwise it will break the hours",
+	"seasonallyClosed": false,
+	"sunday" : 	"12pm - 7pm",
+	"monday" : "3pm - 7pm",
+	"tuesday" : "3pm - 7pm",
+	"wednesday" : "Closed",
+	"thursday" : "3pm - 7pm",
+	"friday" : "3pm - 7pm",
+	"saturday" : "12pm - 7pm",
+	"showNotice" : false,
+	"notice": "Placeholder Notice, set showNotice to true to display"
+	}

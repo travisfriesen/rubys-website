@@ -1,9 +1,9 @@
 import { Hours } from "@/components/hours";
 import { MiniGolfPricing } from "@/components/minigolfpricing";
-import { GolfPricing } from "@/components/golfpricing";
 import { Header } from "@/components/header";
 import {MapFrame} from "@/components/mapframe";
 import { Spacer } from "@/components/spacer";
+import hoursData from "@/data/boardwalk_station_hours.json";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
               <Spacer/>
               <div className="desktop-only grid grid-cols-2 grid-rows-2">
                   <div className="m-auto">
-                      <Hours title="Boardwalk Station Hours" sun="12pm-8pm" mon="3pm-8pm" tues="3pm-8pm" weds="Closed" thurs="3pm-8pm" fri="12pm-8pm" sat="12pm-8pm"/>
+                      <Hours title={hoursData.title} seasonally_closed={hoursData.seasonallyClosed} sun={hoursData.sunday} mon={hoursData.monday} tues={hoursData.tuesday} weds={hoursData.wednesday} thurs={hoursData.thursday} fri={hoursData.friday} sat={hoursData.saturday} showNotice={hoursData.showNotice} notice={hoursData.notice}/>
                   </div>
                   <div className="m-auto">
                     <MiniGolfPricing title="Indoor Mini Golf"/>
@@ -30,7 +30,7 @@ export default function Home() {
               </div>
               <div className="mobile-only grid grid-rows-3">
                   <div className="m-auto">
-                      <Hours title="Boardwalk Station Hours" sun="12pm-8pm" mon="3pm-8pm" tues="3pm-8pm" weds="Closed" thurs="3pm-8pm" fri="12pm-8pm" sat="12pm-8pm"/>
+                      <Hours title={hoursData.title} seasonally_closed={hoursData.seasonallyClosed} sun={hoursData.sunday} mon={hoursData.monday} tues={hoursData.tuesday} weds={hoursData.wednesday} thurs={hoursData.thursday} fri={hoursData.friday} sat={hoursData.saturday} showNotice={hoursData.showNotice} notice={hoursData.notice}/>
                   </div>
                   <div className="m-auto">
                     <MiniGolfPricing title="Indoor Mini Golf"/>
