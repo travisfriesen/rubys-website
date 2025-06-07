@@ -1,13 +1,13 @@
 {
 	"title": "Driving Range Hours",
 	"_comment" : "ensure that any commas in this file are maintained, otherwise it will break the hours",
-	"seasonallyClosed": true,
+	"seasonallyClosed": false,
 	"sunday" : 	"11am - 5pm",
-	"monday" : "3pm - 5:30pm",
-	"tuesday" : "3pm - 5:30pm",
+	"monday" : "Call for appointment",
+	"tuesday" : "Call for appointment",
 	"wednesday" : "Closed",
-	"thursday" : "3pm - 5:30pm",
-	"friday" : "1pm - 5:30pm",
+	"thursday" : "Call for appointment",
+	"friday" : "11am - 5pm",
 	"saturday" : "11am - 5pm",
 	"showNotice" : true,
 	"notice": "All hours are dependant of weather. Check out our facebook for weather related closure notices."

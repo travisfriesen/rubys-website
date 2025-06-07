@@ -7,7 +7,7 @@
 	"tuesday" : "3pm - 7pm",
 	"wednesday" : "Closed",
 	"thursday" : "3pm - 7pm",
-	"friday" : "3pm - 7pm",
+	"friday" : "1pm - 7pm",
 	"saturday" : "12pm - 7pm",
 	"showNotice" : false,
 	"notice": "Placeholder Notice, set showNotice to true to display"
