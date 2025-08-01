@@ -3,12 +3,12 @@
 	"_comment" : "ensure that any commas in this file are maintained, otherwise it will break the hours",
 	"seasonallyClosed": false,
 	"sunday" : 	"12pm - 7pm",
-	"monday" : "3pm - 7pm",
-	"tuesday" : "3pm - 7pm",
+	"monday" : "2pm - 7pm",
+	"tuesday" : "2pm - 7pm",
 	"wednesday" : "Closed",
-	"thursday" : "3pm - 7pm",
-	"friday" : "1pm - 7pm",
-	"saturday" : "12pm - 7pm",
+	"thursday" : "2pm - 7:30pm",
+	"friday" : "12pm - 8pm",
+	"saturday" : "12pm - 9pm",
 	"showNotice" : false,
 	"notice": "Placeholder Notice, set showNotice to true to display"
 	}
