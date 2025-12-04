@@ -1,7 +1,7 @@
 {
 	"title": "Driving Range Hours",
 	"_comment" : "ensure that any commas in this file are maintained, otherwise it will break the hours",
-	"seasonallyClosed": false,
+	"seasonallyClosed": true,
 	"sunday" : 	"11am - 5pm",
 	"monday" : "Call for appointment",
 	"tuesday" : "Call for appointment",
