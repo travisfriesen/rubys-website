@@ -9,6 +9,6 @@
 	"thursday" : "Call for appointment",
 	"friday" : "11am - 5pm",
 	"saturday" : "11am - 5pm",
-	"showNotice" : true,
+	"showNotice" : false,
 	"notice": "All hours are dependant of weather. Check out our facebook for weather related closure notices."
 }
