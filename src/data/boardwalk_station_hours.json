@@ -1,14 +1,14 @@
 {
-	"title": "Boardwalk Station Hours",
-	"_comment" : "ensure that any commas in this file are maintained, otherwise it will break the hours",
-	"seasonallyClosed": false,
-	"sunday" : 	"12:00pm - 7:00pm",
-	"monday" : "3:30pm - 7:00pm",
-	"tuesday" : "Closed",
-	"wednesday" : "Closed",
-	"thursday" : "3:30pm - 7:00pm",
-	"friday" : "3:30pm - 7:00pm",
-	"saturday" : "12:00pm - 7:00pm",
-	"showNotice" : false,
-	"notice": "Placeholder Notice, set showNotice to true to display"
-	}
+  "title": "Boardwalk Station Hours",
+  "_comment": "ensure that any commas in this file are maintained, otherwise it will break the hours",
+  "seasonallyClosed": false,
+  "sunday": "12:00pm - 6:30pm",
+  "monday": "3:30pm - 6:00pm",
+  "tuesday": "3:30pm - 6:00pm",
+  "wednesday": "Closed",
+  "thursday": "3:30pm - 6:00pm",
+  "friday": "3:30pm - 6:00pm",
+  "saturday": "12:00pm - 6:30pm",
+  "showNotice": false,
+  "notice": "Placeholder Notice, set showNotice to true to display"
+}
