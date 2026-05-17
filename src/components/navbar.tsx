@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="relative z-50">
+    <div>
       <div className="desktop-only h-20 bg-r-red w-full align-middle grid grid-cols-5 justify-center">
         <div className="flex justify-center">
           <img src="/rubys.svg" alt="Ruby's Paradise Logo" width={75} height={75} />
