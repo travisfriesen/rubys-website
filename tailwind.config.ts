@@ -3,6 +3,10 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      mobile: { max: "901px" },
+      desktop: "902px",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
