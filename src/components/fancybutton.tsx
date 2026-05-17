@@ -7,8 +7,8 @@ interface IButton {
 
 export const FancyButton = ({ href, label }: IButton) => {
   return (
-    <div className="flex m-auto bg-r-white bg-opacity-35 align-middle justify-center pt-4 h-16 rounded-2xl w-auto p-6">
-      <Link className="w-full h-full" to={href}>
+    <div className="flex items-center justify-center m-auto bg-r-white bg-opacity-35 h-16 rounded-2xl w-auto p-6">
+      <Link className="flex items-center justify-center w-full h-full" to={href}>
         <p className="text-center text-r-text">{label}</p>
       </Link>
     </div>
