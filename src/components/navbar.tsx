@@ -14,14 +14,14 @@ export default function Navbar() {
     <div>
       <div className="desktop-only h-20 bg-r-red w-full align-middle grid grid-cols-5 justify-center">
         <div className="flex justify-center">
-          <img src="/rubys.svg" alt="Ruby's Paradise Logo" width={75} height={75} />
+          <img src="/rubys.svg" alt="Ruby's Paradise Logo" width={68} height={68} />
         </div>
         {}
         <div className="flex m-auto text-3xl">
           <Button href={"/"} label={"Ruby's Paradise"} />
         </div>
         <div className="col-span-1"></div>
-        <div className="col-span-2 inline-grid grid-cols-4 pr-4">
+        <div className="col-span-2 flex items-center justify-end gap-6 pr-10">
           <Button href="/golf" label="Golf" />
           <Button href="/minigolf" label="Mini Golf" />
           <Button href="/hotdogcart" label="Hot Dog Cart" />
@@ -30,7 +30,7 @@ export default function Navbar() {
       </div>
       <div className="mobile-only h-20 bg-r-red w-full align-middle grid grid-cols-4 justify-center">
         <div className="flex justify-center">
-          <img src="/rubys.svg" alt="Ruby's Paradise Logo" width={75} height={75} />
+          <img src="/rubys.svg" alt="Ruby's Paradise Logo" width={68} height={68} />
         </div>
         {}
         <div className="flex m-auto text-3xl">
