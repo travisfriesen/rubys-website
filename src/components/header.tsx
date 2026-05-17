@@ -1,50 +1,17 @@
-import { useEffect, useState } from "react";
-
 interface IHeader {
   src: string;
   alt: string;
 }
 
 export const Header = ({ src, alt }: IHeader) => {
-  const [zoom, setZoom] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setZoom(true);
-      } else {
-        setZoom(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Call it initially to set the correct state
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <div className="w-full min-h-[20vh] h-[400px] relative">
-      <div className="w-full h-[100%] overflow-hidden relative ">
-        <img
-          src={src}
-          alt={alt}
-          style={{
-            objectFit: "cover",
-            objectPosition: "center",
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            transform: zoom ? "scale(1.1)" : "scale(1)",
-            transition: "transform 0.5s ease",
-          }}
-        />
-        <div className="text-r-white bg-r-black bg-opacity-40 z-10 relative w-full h-full pointer-events-none">
-          <div className="flex justify-center m-auto">
-            <h2 className="opacity-100 text-5xl"></h2>
-          </div>
-        </div>
-      </div>
+    <div className="relative w-full h-[40vw] min-h-[200px] max-h-[400px] overflow-hidden">
+      <img
+        src={src}
+        alt={alt}
+        className="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-r-black bg-opacity-40" />
     </div>
   );
 };
