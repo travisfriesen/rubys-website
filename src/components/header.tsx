@@ -5,7 +5,7 @@ interface IHeader {
 
 export const Header = ({ src, alt }: IHeader) => {
   return (
-    <div className="relative w-full h-[250px] md:h-[400px] overflow-hidden">
+    <div className="relative w-full h-[320px] md:h-[400px] overflow-hidden">
       <img
         src={src}
         alt={alt}
