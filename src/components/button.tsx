@@ -8,8 +8,8 @@ interface IButton {
 
 export const Button = ({ href, label, onClick }: IButton) => {
   return (
-    <div className="flex m-auto">
-      <Link className="w-full h-full" to={href}>
+    <div className="flex items-center justify-center m-auto">
+      <Link className="flex items-center justify-center w-full h-full" to={href}>
         <div className="text-r-text">{label}</div>
       </Link>
     </div>
