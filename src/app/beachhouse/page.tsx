@@ -1,10 +1,4 @@
-import { MiniGolfPricing } from "@/components/minigolfpricing";
-import { GolfPricing } from "@/components/golfpricing";
-import { Header } from "@/components/header";
-import { MapFrame } from "@/components/mapframe";
-import { Spacer } from "@/components/spacer";
-import hoursData from "@/data/driving_range_hours.json";
-import { Hours } from "@/components/hours";
+import { Spacer } from "@/components/Spacer";
 
 export default function Home() {
   return (
