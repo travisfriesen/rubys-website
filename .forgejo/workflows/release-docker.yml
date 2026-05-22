@@ -1,0 +1,53 @@
+name: Release Docker Build
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  docker-build:
+    runs-on: debian-13
+    permissions:
+      contents: read
+    env:
+      REGISTRY: git.travisf.ca
+      IMAGE_REPO: git.travisf.ca/${{ github.repository }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t ${IMAGE_REPO}:${{ github.ref_name }} -t ${IMAGE_REPO}:latest .
+
+      - name: Tag image with release number
+        if: ${{ github.event_name == 'release' }}
+        run: docker tag ${IMAGE_REPO}:${{ github.ref_name }} ${IMAGE_REPO}:release-${{ github.event.release.id }}
+
+      - name: Login to git.travisf.ca registry
+        env:
+          REGISTRY_USERNAME: ${{ secrets.FORGEJO_REGISTRY_USERNAME }}
+          REGISTRY_PASSWORD: ${{ secrets.FORGEJO_REGISTRY_PASSWORD }}
+        run: |
+          echo "${REGISTRY_PASSWORD}" | docker login "${REGISTRY}" -u "${REGISTRY_USERNAME}" --password-stdin
+
+      - name: Push image tags
+        run: |
+          docker push ${IMAGE_REPO}:${{ github.ref_name }}
+          docker push ${IMAGE_REPO}:latest
+
+      - name: Push release number tag
+        if: ${{ github.event_name == 'release' }}
+        run: docker push ${IMAGE_REPO}:release-${{ github.event.release.id }}
+
+      # - name: Trigger production CD (placeholder)
+      #   if: ${{ false }}
+      #   env:
+      #     PROD_DEPLOY_WEBHOOK_URL: ${{ secrets.PROD_DEPLOY_WEBHOOK_URL }}
+      #   run: |
+      #     cat <<EOF > payload.json
+      #     {"release":"${{ github.ref_name }}","image":"${IMAGE_REPO}:${{ github.ref_name }}"}
+      #     EOF
+      #     curl -X POST "${PROD_DEPLOY_WEBHOOK_URL}" \
+      #       -H "Content-Type: application/json" \
+      #       -d @payload.json
