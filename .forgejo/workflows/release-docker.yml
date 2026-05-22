@@ -26,8 +26,8 @@ jobs:
 
       - name: Login to git.travisf.ca registry
         env:
-          REGISTRY_USERNAME: ${{ secrets.FORGEJO_REGISTRY_USERNAME }}
-          REGISTRY_PASSWORD: ${{ secrets.FORGEJO_REGISTRY_PASSWORD }}
+          REGISTRY_USERNAME: ${{ secrets.FORGEJO_ACTOR }}
+          REGISTRY_PASSWORD: ${{ secrets.FORGEJO_TOKEN }}
         run: |
           echo "${REGISTRY_PASSWORD}" | docker login "${REGISTRY}" -u "${REGISTRY_USERNAME}" --password-stdin
 
