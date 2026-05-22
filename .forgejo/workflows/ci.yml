@@ -1,10 +1,7 @@
 name: CI
 
 on:
-  push:
-    - main
-  pull_request:
-    - main
+  push: [main]
 
 jobs:
   lint-and-build:
