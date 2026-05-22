@@ -16,6 +16,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
+      - name: Load vault secret config
+        uses: https://git.travisf.ca/infrastructure-ci/vault-config-loader@v1.1
+        with:
+          config_file: vault_secrets.cfg
+
+      - name: Fetch secrets from Vault
+        uses: https://git.travisf.ca/infrastructure-ci/vault-action@v3
+        with:
+          url: ${{ vars.VAULT_ADDRESS }}
+          method: approle
+          roleId: ${{ secrets.VAULT_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_SECRET_ID }}
+          secrets: ${{ env.VAULT_SECRETS }}
+
+      - name: Login to Forgejo registry
+        uses: docker/login-action@v3
+        with:
+          registry: git.travisf.ca
+          username: ${{ env.FORGEJO_ACTOR }}
+          password: ${{ env.FORGEJO_CI_TOKEN }}
 
       - name: Build Docker image
         run: docker build -t ${IMAGE_REPO}:${{ github.ref_name }} -t ${IMAGE_REPO}:latest .
@@ -23,13 +44,6 @@ jobs:
       - name: Tag image with release number
         if: ${{ github.event_name == 'release' }}
         run: docker tag ${IMAGE_REPO}:${{ github.ref_name }} ${IMAGE_REPO}:release-${{ github.event.release.id }}
-
-      - name: Login to git.travisf.ca registry
-        env:
-          REGISTRY_USERNAME: ${{ env.FORGEJO_ACTOR }}
-          REGISTRY_PASSWORD: ${{ env.FORGEJO_TOKEN }}
-        run: |
-          echo "${REGISTRY_PASSWORD}" | docker login "${REGISTRY}" -u "${REGISTRY_USERNAME}" --password-stdin
 
       - name: Push image tags
         run: |
