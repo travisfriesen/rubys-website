@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 # Copy package files first to leverage caching
 COPY package.json bun.lock ./
-RUN bun install --frozen-lockfile
+RUN bun install
 
 # Copy only necessary files for build
 COPY tsconfig.json vite.config.ts postcss.config.mjs tailwind.config.ts index.html ./
