@@ -21,7 +21,7 @@ export default function Home() {
         <PageGrid className="my-8 gap-x-16 gap-y-8 desktop:w-[68vw] mobile:w-[84vw]">
           <Card
             title="Driving Range"
-            desc="Come on down to our Driving Range, where you can perfect your swing against a backdrop of up to 280 yards of range. Whether you're a seasoned golfer or a beginner looking to improve, our range offers bundles of 26 for $6 or 52 balls for $12 or 104 balls for $22. Don't worry about bringing your clubs – we provide club rentals at $5 per club or $20 for a complete set with a valid driver's license. Located in Winnipeg Beach, Manitoba, our driving range is the ideal spot to practice your game and enjoy the fresh air."
+            desc="Come on down to our Driving Range, where you can perfect your swing against a backdrop of up to 280 yards of range. Whether you're a seasoned golfer or a beginner looking to improve, our range offers bundles of 26 for $7 or 52 balls for $14 or 104 balls for $25. Don't worry about bringing your clubs – we provide club rentals at $5 per club or $20 for a complete set with a valid driver's license. Located in Winnipeg Beach, Manitoba, our driving range is the ideal spot to practice your game and enjoy the fresh air."
             link="/golf"
           ></Card>
           <Card
