@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -36,6 +35,14 @@ body {
 }
 
 @layer utilities {
+  .h-180 {
+    height: 45rem;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
   .text-balance {
     text-wrap: balance;
   }

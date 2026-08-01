@@ -29,7 +29,7 @@ export const Hours = ({
 }: IHours) => {
   return (
     <div className="pr-5 pl-5">
-      <div className="rounded-2xl w-fit bg-r-blue h-180 p-8 tracking-wide flex flex-col space-between">
+      <div className="rounded-2xl w-full h-full bg-r-blue p-8 tracking-wide flex flex-col">
         <h1 className="text-4xl text-center pb-3 text-r-text">{title}</h1>
         {seasonally_closed ? (
           <div>

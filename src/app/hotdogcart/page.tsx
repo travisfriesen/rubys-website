@@ -34,7 +34,7 @@ export default function Home() {
           <PageGridItem>
             <HotDogPricing />
           </PageGridItem>
-          <PageGridItem className="w-full desktop:pl-5 mobile:px-5">
+          <PageGridItem className="w-full desktop:pl-5 mobile:px-5 pt-1">
             <MapFrame href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1455.5699504806764!2d-96.97417949025713!3d50.500009681638005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52eb01d7113bc7e1%3A0x253fb3637c1e9501!2sWinnipeg%20Beach%20Farmers%20Market!5e0!3m2!1sen!2sca!4v1724531915190!5m2!1sen!2sca" />
           </PageGridItem>
         </PageGrid>

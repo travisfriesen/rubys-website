@@ -1,0 +1,30 @@
+{
+  "drivingRange": {
+    "title": "Driving Range Pricing",
+    "items": [
+      { "label": "Small (26 balls)", "price": "$7" },
+      { "label": "Medium (52 balls)", "price": "$14" },
+      { "label": "Large (104 balls)", "price": "$25" },
+      { "label": "Saturday Special: 3 Large's", "price": "$30" }
+    ],
+    "notice": "Buy 10 buckets and get your 11th bucket free!"
+  },
+  "miniGolf": {
+    "items": [
+      { "label": "Adults (13+)", "price": "$8" },
+      { "label": "Children (12 and under)", "price": "$6" },
+      { "label": "Family (2 adult + 2 kid)", "price": "$26" }
+    ]
+  },
+  "hotDogCart": {
+    "title": "Hot Dog Cart Pricing",
+    "items": [
+      { "label": "Hotdog", "price": "$7" },
+      { "label": "Burger", "price": "$10" },
+      { "label": "Veggie Burger", "price": "$8" },
+      { "label": "Chips", "price": "$2" },
+      { "label": "Pop", "price": "$2.25" },
+      { "label": "Water", "price": "$1.25" }
+    ]
+  }
+}

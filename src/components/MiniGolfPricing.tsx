@@ -5,7 +5,7 @@ interface IHours {
 export const MiniGolfPricing = ({ title }: IHours) => {
   return (
     <div className="pl-5 pr-5">
-      <div className=" rounded-2xl w-fit bg-r-green h-180 p-8 tracking-wide flex flex-col space-between">
+      <div className=" rounded-2xl w-full h-full bg-r-green p-8 tracking-wide flex flex-col">
         <h1 className="text-4xl text-center pb-3 text-r-text">{title}</h1>
         <div className="grid grid-cols-2">
           <div className="text-r-text">

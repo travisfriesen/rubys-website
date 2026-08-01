@@ -8,12 +8,11 @@ interface ICard {
 
 export const Card = ({ title, desc, link }: ICard) => {
   return (
-    <div className=" rounded-2xl w-full bg-r-blue h-180 p-8 tracking-wide flex flex-col space-between">
+    <div className=" rounded-2xl w-full h-full bg-r-blue p-8 tracking-wide flex flex-col">
       <h1 className="text-r-text text-4xl text-center pb-3 text-r-text">{title}</h1>
       <br />
       <p className="text-r-text text-r-text">{desc}</p>
-      <br />
-      <div className="self-center sticky top-full mt-5">
+      <div className="self-center mt-auto pt-5">
         <FancyButton href={link} label="Learn More"></FancyButton>
       </div>
     </div>

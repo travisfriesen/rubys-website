@@ -11,7 +11,7 @@ export const Header = ({ src, alt }: IHeader) => {
         alt={alt}
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
-      <div className="absolute inset-0 bg-r-black bg-opacity-40" />
+      <div className="absolute inset-0 bg-r-black/40" />
     </div>
   );
 };
