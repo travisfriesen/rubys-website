@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+# NOTE TO SELF
+
+When producing the image this just publishes the image, you need to update the production deployment to the new image, also ensure that you change the route from 127.0.0.1 to - 80:8080 on the compose or caddy breaks ;-;
+
+
 ## Getting Started
 
 First, run the development server:
