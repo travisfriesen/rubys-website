@@ -15,7 +15,7 @@ jobs:
       IMAGE_REPO: git.travisf.ca/${{ github.repository }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Load vault secret config
         uses: https://git.travisf.ca/infrastructure-ci/vault-config-loader@v1.1
