@@ -16,7 +16,7 @@ ENV NODE_ENV=production
 RUN bun run build
 
 # Production stage
-FROM nginx:1.27-alpine AS production
+FROM nginx:1.31-alpine AS production
 
 # Copy built assets
 COPY --from=builder /usr/src/app/dist /usr/share/nginx/html
