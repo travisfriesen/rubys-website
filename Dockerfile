@@ -1,5 +1,5 @@
 # Build stage
-FROM oven/bun:1.3.13 AS builder
+FROM oven/bun:1.4.5 AS builder
 WORKDIR /usr/src/app
 
 # Copy package files first to leverage caching
